@@ -4,7 +4,7 @@ import Header from "./components/header";
 import { dummyProducts } from "./data/dummy_data";
 import ProductCard from "./components/product_card";
 import Carousel from "./components/carousel";
-
+import Footer from "./components/footer";
 export default function Home() {
   const latest_product = dummyProducts[2];
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           fill={true}
         />
         <div className={styles.cta_button}>
-          <h2>choose uniqueness</h2>
+          <h3>choose uniqueness</h3>
         </div>
       </div>
       <main className={styles.main}>
@@ -55,6 +55,7 @@ export default function Home() {
         
       </main>
     </div>
+    <Footer />
     </>
   );
 }
