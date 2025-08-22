@@ -1,0 +1,74 @@
+.hero {
+    height: 100dvh;
+    width: 100%;
+}
+
+.cta_button {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #56E6AD;
+    padding: 0.75rem;
+
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+
+    > div {
+        height: 75dvh;
+        width: 100%;
+        border: 1px solid #ccc;
+
+    }
+    .grid1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: end;
+        justify-content: end;
+        align-items: end;
+        padding: 0.5rem;
+            .grid1_text {
+        color: #6b6b6b;
+        text-align: end;
+    }
+    p {
+        color: #6b6b6b;
+    }
+
+    }
+
+    .grid2, .grid4 {
+        display: flex;
+        flex-direction: row;
+        > div {
+            height: 100%;
+            width: 100%;
+            border: 1px solid #ccc;
+
+        }
+    }
+
+    .grid4 {
+        position: relative;
+                        .mood_title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        left: 0;
+    }
+    }
+
+
+
+}

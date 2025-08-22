@@ -1,95 +1,60 @@
+import styles from "../app/styles/page.module.scss";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Header from "./components/header";
+import { dummyProducts } from "./data/dummy_data";
+import ProductCard from "./components/product_card";
+import Carousel from "./components/carousel";
 
 export default function Home() {
+  const latest_product = dummyProducts[2];
   return (
+    <>
+    <Header />
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+      <div className={styles.hero}>
+        <Image 
+          alt="frontpage picture"
+          src={"/hero.png "}
+          fill={true}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className={styles.cta_button}>
+          <h2>choose uniqueness</h2>
         </div>
+      </div>
+      <main className={styles.main}>
+        <section className={styles.section}>
+          <div className={styles.grid1}>
+            <p className={styles.grid1_text}>unique-nc presents creations made one at a time, where every brushstroke is a testament to singular artistry and timeless individuality.</p>
+            <p>latest release</p>
+          </div>
+          <div className={styles.grid2}>
+            <div className={styles.latest_release}>
+              <ProductCard product={latest_product} />
+            </div>
+            <div></div>
+          </div>
+          <div className={styles.grid1}>
+            <p className={styles.grid1_text}>make a bold statement with clothing that is as unique as your are. Welcome to a realm where fashion becomes a canvas and every piece tells a story.</p>
+            <button>explore our lookbook</button>
+          </div>
+          <div className={styles.grid4}>
+            <h1 className={styles.mood_title}>dare to be unique</h1>
+            <Image 
+            alt="mood image"
+            src={"/mood.png"}
+            height={700}
+            width={1000}
+            layout="responsive"
+            />
+          </div>
+
+        </section>
+        <section>
+          <Carousel />
+        </section>
+        
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
+    </>
   );
 }

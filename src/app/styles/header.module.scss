@@ -1,0 +1,42 @@
+.header {
+    z-index: 10;
+    position: fixed;
+    width: 20%;
+    padding: 0.5rem;
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+                        .item_link {
+                    text-decoration: none;
+                    color: #000;
+                    h1 {
+                        font-size: 2rem;
+                        font-weight: 700;   
+                    }
+                }
+        .logo {
+            background-color: #56E6AD;
+            width: 100%;
+            padding: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .menu_items_container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .menu_item {
+                background-color: #56E6AD;
+                width: 100%;
+                padding: 0.75rem;
+                .item_link {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
