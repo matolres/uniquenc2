@@ -40,3 +40,11 @@ p, span, a, li {
   pointer-events: none; // ensures it doesn't interact with clicks
   z-index: 9999;       // sits on top of most content
 }
+
+.left-line {
+  left: 20%;  // roughly middle of logo
+}
+
+.right-line {
+  left: 27.5%;        // right edge of header (menu_items_container starts here)
+}

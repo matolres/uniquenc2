@@ -26,7 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${HeadlineFont.variable} ${TextFont.variable}`}>
         {children}
-        <div className="vertical-line" />
+        <div className="vertical-line left-line" />
+
+        <div className="vertical-line right-line" />
       </body>
     </html>
   );

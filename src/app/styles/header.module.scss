@@ -1,12 +1,15 @@
 .header {
     z-index: 10;
     position: fixed;
-    width: 16.67%;
     padding: 0.5rem;
+    width: 27.5%;
     .nav {
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+        
+
                         .item_link {
                     text-decoration: none;
                     
@@ -16,15 +19,14 @@
                     }
                 }
         .logo {
-            background-color: blue;
-            width: 100%;
+            background-color: #FFFCF9;
             padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
+            width: 72.73%;
             
         }
         .menu_items_container {
+            width: 27.27%;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
