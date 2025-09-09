@@ -4,11 +4,11 @@ import "./globals.scss";
 import localFont from "next/font/local";
 
 const HeadlineFont = localFont({
-  src: "./fonts/headlines/Neue Regrade Bold.otf",
+  src: "./fonts/new fonts/sawtoncircular-thin-webfont.ttf",
   variable: "--font-headline",
 });
 const TextFont = localFont({
-  src: "./fonts/texts/Sono-VariableFont_MONO,wght.ttf",
+  src: "./fonts/new fonts/borna-medium-webfont.woff",
   variable: "--font-text",
 });
 
@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${HeadlineFont.variable} ${TextFont.variable}`}>
         {children}
+        <div className="vertical-line" />
       </body>
     </html>
   );

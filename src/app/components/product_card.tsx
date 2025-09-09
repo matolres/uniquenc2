@@ -10,14 +10,18 @@ export default function ProductCard (
     return (
         <div className={styles.container}>
             
-                <Link href={`/products/${product.slug}`}>
-                <Image 
-                    src={product.imageUrl} 
-                    alt={product.name}
-                    height={500}
-                    width={400}
-                    layout="responsive"
-                    />      
+                <Link href={`/products/${product.slug}`} className={styles.link}>
+        <Image
+            src={product.imageUrl}
+            alt={product.name}
+            fill
+            style={{ objectFit: 'contain' }} // or "contain" to preserve full aspect ratio
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+             
+        
+        /> 
+        
+   
             </Link>
             <div className={styles.card_text}>
                 <p>{product.name}</p>

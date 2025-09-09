@@ -5,8 +5,7 @@
 }
 
 html, body {
-  height: 100%;
-  color: #ECE8ED;
+  background-color: #dbdbdb;
 }
 h1 {
   font-size: 6rem;
@@ -28,4 +27,16 @@ h1, h2, h3, h4, h5, h6 {
 p, span, a, li {
   font-family: var(--font-text), sans-serif;
   color: #6b6b6b;
+}
+
+/* globals.scss */
+.vertical-line {
+  position: fixed;     // stays in place even when scrolling
+  top: 0;              // start from top
+  left: 16.67%;           // or whatever horizontal position you want
+  height: 100vh;       // full viewport height
+  width: 0.5px;          // thickness of your line
+  background-color: #b7b7b7; // line color
+  pointer-events: none; // ensures it doesn't interact with clicks
+  z-index: 9999;       // sits on top of most content
 }

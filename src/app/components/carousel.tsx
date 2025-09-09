@@ -6,7 +6,6 @@ export default function Carousel() {
 
     return (
         <div>
-            <div className="carousel">
                 <div className={styles.carousel_container}>
                     <div className={styles.carousel_item} >
                     {dummyProducts.map((product) => (
@@ -14,7 +13,6 @@ export default function Carousel() {
                     </div>
                 </div>
                
-            </div>
         </div>
     )
 

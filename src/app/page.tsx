@@ -14,8 +14,11 @@ export default function Home() {
       <div className={styles.hero}>
         <Image 
           alt="frontpage picture"
-          src={"/hero.png "}
-          fill={true}
+          src={"/hero_image.png "}
+            fill
+            style={{ objectFit: 'cover' }} // or "contain" to preserve full aspect ratio
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
         />
         <div className={styles.cta_button}>
           <h3>choose uniqueness</h3>
@@ -24,14 +27,18 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.section}>
           <div className={styles.grid1}>
-            <p className={styles.grid1_text}>unique-nc presents creations made one at a time, where every brushstroke is a testament to singular artistry and timeless individuality.</p>
+            
             <p>latest release</p>
           </div>
           <div className={styles.grid2}>
             <div className={styles.latest_release}>
               <ProductCard product={latest_product} />
             </div>
-            <div></div>
+            
+            <div>
+              <h2>Hand-painted, one by one</h2>
+              <p className={styles.grid1_text}>unique-nc presents creations made one at a time, where every brushstroke is a testament to singular artistry and timeless individuality.</p>
+              </div>
           </div>
           <div className={styles.grid1}>
             <p className={styles.grid1_text}>make a bold statement with clothing that is as unique as your are. Welcome to a realm where fashion becomes a canvas and every piece tells a story.</p>
@@ -42,9 +49,10 @@ export default function Home() {
             <Image 
             alt="mood image"
             src={"/mood.png"}
-            height={700}
-            width={1000}
-            layout="responsive"
+            fill
+            style={{ objectFit: 'cover' }} // or "contain" to preserve full aspect ratio
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            
             />
           </div>
 

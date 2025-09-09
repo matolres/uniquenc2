@@ -6,7 +6,7 @@ export const dummyProducts: Product[] = [
         name: "Unique T-Shirt",
         description: "A bold statement t-shirt that stands out.",
         price: 1000,
-        imageUrl: "/products/tshirt.png",
+        imageUrl: "/products/black tee.png",
         category: "clothing",
         stock: 100,
         slug: "unique-t-shirt"
@@ -16,7 +16,7 @@ export const dummyProducts: Product[] = [
         name: "Stylish Hoodie",
         description: "A stylish hoodie for everyday wear.",
         price: 1250,
-        imageUrl: "/products/hoodie.png",
+        imageUrl: "/products/bluelongsleeve.png",
         category: "clothing",
         stock: 50,
         slug: "stylish-hoodie"
@@ -26,7 +26,7 @@ export const dummyProducts: Product[] = [
         name: "Trendy Jeans",
         description: "Comfortable and trendy jeans for all occasions.",
         price: 1500,
-        imageUrl: "/products/jeans.png",
+        imageUrl: "/products/blackjeans.png",
         category: "clothing",
         stock: 75,
         slug: "trendy-jeans"
@@ -36,7 +36,7 @@ export const dummyProducts: Product[] = [
         name: "Pants",
         description: "Classic sneakers that never go out of style.",
         price: 1500,
-        imageUrl: "/products/pants.png",
+        imageUrl: "/products/longsleeve.png",
         category: "footwear",
         stock: 120,
         slug: "classic-sneakers"
