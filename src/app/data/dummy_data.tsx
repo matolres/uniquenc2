@@ -40,5 +40,15 @@ export const dummyProducts: Product[] = [
         category: "footwear",
         stock: 120,
         slug: "classic-sneakers"
+    },
+    {
+        id: "5",
+        name: "Pants",
+        description: "Classic sneakers that never go out of style.",
+        price: 1500,
+        imageUrl: "/products/pants.png",
+        category: "footwear",
+        stock: 120,
+        slug: "classic-sneakers"
     }
 ]

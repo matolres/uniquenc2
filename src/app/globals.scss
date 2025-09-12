@@ -5,7 +5,7 @@
 }
 
 html, body {
-  background-color: #dbdbdb;
+  background-color: #EEEDE9;
 }
 h1 {
   font-size: 6rem;
@@ -15,18 +15,16 @@ h2 {
   font-size: 2.25rem;
   font-weight:700;
 }
-p {
-  color: #6b6b6b;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headline), sans-serif;
-  color: #6b6b6b;
+  color: #1A3836;
 }
 
 p, span, a, li {
   font-family: var(--font-text), sans-serif;
-  color: #6b6b6b;
+  color: #1A3836;
 }
 
 /* globals.scss */
@@ -36,15 +34,15 @@ p, span, a, li {
   left: 16.67%;           // or whatever horizontal position you want
   height: 100vh;       // full viewport height
   width: 0.5px;          // thickness of your line
-  background-color: #b7b7b7; // line color
+  background-color: #E5E1DE; // line color
   pointer-events: none; // ensures it doesn't interact with clicks
   z-index: 9999;       // sits on top of most content
 }
 
 .left-line {
-  left: 20%;  // roughly middle of logo
+  left: 21%;  
 }
 
 .right-line {
-  left: 27.5%;        // right edge of header (menu_items_container starts here)
+  left: 28%;        // right edge of header (menu_items_container starts here)
 }

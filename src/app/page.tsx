@@ -27,9 +27,9 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.section}>
           <div className={styles.grid1}>
-            
             <p>latest release</p>
           </div>
+          <div></div>
           <div className={styles.grid2}>
             <div className={styles.latest_release}>
               <ProductCard product={latest_product} />
@@ -44,17 +44,22 @@ export default function Home() {
             <p className={styles.grid1_text}>make a bold statement with clothing that is as unique as your are. Welcome to a realm where fashion becomes a canvas and every piece tells a story.</p>
             <button>explore our lookbook</button>
           </div>
+          <div></div>
           <div className={styles.grid4}>
             <h1 className={styles.mood_title}>dare to be unique</h1>
-            <Image 
-            alt="mood image"
-            src={"/mood.png"}
-            fill
-            style={{ objectFit: 'cover' }} // or "contain" to preserve full aspect ratio
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            <div className={styles.mood_image_container}>
+             <Image 
+              alt="mood image"
+              src={"/mood.png"}
+              fill
+              style={{ objectFit: 'cover' }} // or "contain" to preserve full aspect ratio
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             
             />
+            </div>
+           
           </div>
+          
 
         </section>
         <section>

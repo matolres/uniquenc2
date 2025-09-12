@@ -26,6 +26,7 @@ export default function ProductCard (
             <div className={styles.card_text}>
                 <p>{product.name}</p>
                 <p>{product.price} kr</p>
+                <p>{product.id}</p>
             </div>
             
         </div>

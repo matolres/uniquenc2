@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 1rem;
+  
   
   > div {
     height: 50svh; // More appropriate for mobile
@@ -51,14 +51,20 @@
     display: flex;
     flex-direction: column;
     
+    
     > div {
       height: 100%;
       width: 100%;
+      padding: 0.5rem;
     }
   }
 
   .grid4 {
     position: relative;
+    .mood_image_container {
+      margin: 0.5rem;
+    }
+
     
     .mood_title {
       position: absolute;
@@ -101,10 +107,12 @@
 
   // Desktop styles (1024px and up)
   @media (min-width: 1024px) {
-    grid-template-columns: 0.20fr 1fr;
+    
+    grid-template-columns:  21% 7% 72%;
     
     > div {
       height: 75svh;
+      padding: 2rem;
     }
     
     .grid1 {
@@ -122,6 +130,14 @@
     .grid4 .mood_title {
       font-size: 2.5rem;
     }
+      .grid4 {
+    position: relative;
+    .mood_image_container {
+      margin: 0.5rem;
+    }
+  }
+
+
   }
 
 
